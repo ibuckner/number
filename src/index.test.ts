@@ -1,4 +1,29 @@
-import { randomInt, randomTimeInt, roundNearest } from ".";
+import {
+  circleArea, circleRadius, countDigit, fitToQuadrant, 
+  randomInt, randomTimeInt, roundNearest
+} from ".";
+
+test("circle area test", () => {
+  expect(circleArea(5)).toStrictEqual(25 * Math.PI);
+  expect(circleArea(0)).toStrictEqual(0);
+});
+
+test("circle radius test", () => {
+  expect(Math.ceil(circleRadius(25))).toStrictEqual(3);
+  expect(circleRadius(0)).toStrictEqual(0);
+});
+
+test("count digit test", () => {
+  expect(countDigit(10000)).toStrictEqual(5);
+  expect(countDigit(0)).toStrictEqual(1);
+  expect(countDigit(1)).toStrictEqual(1);
+  expect(countDigit(-1)).toStrictEqual(1);
+  expect(countDigit(0.0001)).toStrictEqual(1);
+});
+
+test("fit to quadrant test", () => {
+  expect(fitToQuadrant(10, 10, 10)).toStrictEqual(2.5);
+});
 
 test("randomInt tests", () => {
   for (let n = 0; n < 10 ; n++) {
