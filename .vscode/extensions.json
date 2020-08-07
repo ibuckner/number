@@ -2,8 +2,11 @@
   // See https://go.microsoft.com/fwlink/?LinkId=827846
   // for the documentation about the extensions.json format
   "recommendations": [
-    "DavidAnson.vscode-markdownlint",
+    "davidanson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "firsttris.vscode-jest-runner",
+    "github.vscode-pull-request-github",
     "hookyqr.beautify",
     "tobermory.es6-string-html"
   ]
